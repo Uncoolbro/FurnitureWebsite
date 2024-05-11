@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inter:wght@100..900&family=Jim+Nightshade&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inter:wght@100..900&family=Jim+Nightshade&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header{
+ display: flex;
+ align-items: center;
+ gap: 100px;
+ height: 60px;
+ justify-content: space-between;
+ padding: 0px 100px;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: grey;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+
+.AE-Furnishers{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.AE{
+  color: orange;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.Furnishers{
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.AE-Furnishers:hover .AE{
+  color: black;
+}
+
+.AE-Furnishers:hover .Furnishers{
+  color: orange;
+}
+
+nav a:hover{
+  text-decoration: underline 2px;
+}
+
+button{
+  justify-self: end;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 180px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: chocolate;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+header button:hover{
+  transform: translateY(5px);
+  background-color: white;
+  color: chocolate;
+  font-weight: 900;
+  border: 2px solid chocolate;
+}
+
+.hero .content button:hover{
+  transform: translateY(5px);
+  background-color: white;
+  color: chocolate;
+  font-weight: 900;
+  border: 2px solid chocolate;
+}
+
+.hero{
+  background: url(https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  height: 550px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.hero .content{
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 250px;
+  width: 500px;
+  border-radius:20px;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero .content h1{
+  font-size: 40px;
+  color: chocolate;
+  font-weight: 400;
+}
+
+.hero .content h2{
+  font-size: 40px;
+  color: rgba(205, 103, 31, 0.664);
+  font-weight: 800;
+}
+
+.hero .content p{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.socialmedia .circle{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmedia .circle i{
+  font-size: 30px;
+}
+
+.socialmedia .circle i:hover{
+  opacity: 0.8;
+}
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .socialmedia{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin:50px 0;
+}
+.hero2{
+  height: 150px;
+  background-color: rgb(250, 239, 239);
+}
+
+.hero2 h1{
+  text-align: center;
+  padding: 20px;
+}
+
+.hero2 .sponsors{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero2 .sponsors .UberEats{
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  transition: ease-in-out 0.5s;
+}
+
+.hero2 .sponsors .UberEats:hover{
+  color: orange;
+}
+
+.hero2 .sponsors .Slack{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0.5;
+  transition: ease-in-out 0.5s;
+}
+
+.hero2 .sponsors .Slack:hover{
+  color: orange;
+}
+
+.hero2 .sponsors .Microsoft{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.5;
+  transition: ease-in-out 0.5s;
+}
+
+.hero2 .sponsors .Microsoft:hover{
+  color: orange;
+}
+
+.Aboutsection{
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.Aboutsection .sectionleft h1{
+  color: darkblue;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.Aboutsection .sectionleft p{
+  color: grey;
+}
+
+.Aboutsection .sectionleft h4{
+  color: darkblue;
+}
+
+.Aboutsection .sectionright .couch{
+  width: 500px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.Aboutsection .sectionright .chair{
+  width: 300px;
+  position: absolute;
+  right: 50px;
+  top: 800px;
+  border-radius: 10px;
+  border: 2px solid white; 
+}
+
+.whychooseus .header{
+  text-align: center;
+}
+
+.whychooseus h2{
+  color: darkblue;
+}
+
+.whychooseus .header p{
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.whychooseus .boxes{
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  gap: 100px;
+} 
+
+.whychooseus .boxes .box{
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+} 
+
+.whychooseus .boxes .box .circle{
+  border-radius: 50px;
+  background-color: rgb(210, 210, 0, 0.2);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+} 
+
+.whychooseus .boxes .box .circle2{
+  border-radius: 50px;
+  background-color: rgba(53, 210, 0, 0.2);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.whychooseus .boxes .box .circle3{
+  border-radius: 50px;
+  background-color: rgba(210, 0, 196, 0.2);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+} 
+
+.whychooseus .boxes .box .circle .fa-star{
+  color: rgb(210, 210, 0);
+  font-size: 20px;
+} 
+
+.whychooseus .boxes .box .circle2 .fa-shield{
+  color: rgb(10, 201, 0);
+  font-size: 20px;
+}
+
+.whychooseus .boxes .box .circle3 .fa-user{
+  color: rgb(201, 0, 194);
+  font-size: 20px;
+} 
+
+.whychooseus .boxes .box button{
+  border: 2px solid rgba(255, 106, 0, 0.788);
+  height: 40px;
+  width: 100px;
+  margin-top: 60px;
+  margin-left: 150px;
+  background-color: white;
+  color: rgba(255, 106, 0, 0.788);
+}
+
+.whychooseus .boxes p{
+  color: grey;
+}
+
+.whychooseus .boxes .box button:hover{
+  color: white;
+  background-color: rgba(255, 106, 0, 0.788);
+}
+
+.ourproducts{
+  padding: 50px 100px;
+}
+
+.ourproducts .header{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ourproducts .header h2{
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+.ourproducts .header p{
+  color: grey;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourproducts .container .productbox{
+  width: 500px;
+}
+
+.ourproducts .container .productbox img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.ourproducts .container .productbox .rating,.price{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.ourproducts .container .productbox .rating .fa-star{
+  color: rgb(255, 213, 0);
+}
+
+.ourproducts .container .productbox p{ 
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.ourproducts .container .productbox button:hover{
+  transform: translateY(5px);
+  background-color: white;
+  color: chocolate;
+  border: 2px solid chocolate;
+  font-weight: 900;
+}
+
+.reviews{
+  background-color: rgb(250, 250, 250);
+}
+
+.reviews .header{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.reviews .header h2{
+  color: darkblue;
+  padding-bottom: 10px;
+}
+
+.reviews .header p{
+  color: grey;
+}
+
+.reviews .boxes{
+  display: flex;
+  align-items: center;
+  padding:0 100px;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.reviews .boxes .box{
+  width: 350px;
+  height: 250px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+}
+
+.reviews .boxes .box p{
+  color: grey;
+  font-weight: 600;
+}
+
+.reviews .boxes .box .circle{
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.reviews .boxes .box .circle img{
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.reviews .boxes .box .review{
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.reviews .boxes .box .review .fa-star,.fa-star-half-stroke{
+ color: rgb(255, 213, 0); ;
+}
+
+.joinus{
+  margin-top: 100px;
+  background: linear-gradient(
+    to left, 
+    rgba(0, 0, 0, 0.74),
+    rgba(0, 0, 0, 0.767),  
+    rgba(255, 255, 255, 0)),
+    url(./Background.avif)        
+}
+
+.joinus .header{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.joinus .header h2{
+  color:chocolate;
+}
+
+.joinus .header p{
+  color: white;
+}
+
+.joinus form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.joinus form input{
+  background-color: rgb(252, 237, 218);
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  padding:0 20px;
+  font-weight: 600;
+}
+
+.joinus form button:hover{
+  transform: translateY(5px);
+  background-color: white;
+  color: chocolate;
+  border: 2px solid chocolate;
+  font-weight: 900;
+}
+
+.footertop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 248, 239);
+  margin-top: 100px;
+  height: 100px;
+  padding:0 50px;
+  border-bottom: 2px solid chocolate;
+}
+
+.footertop .links{
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.footertop .links a{
+  text-decoration: none;
+  color: grey;
+}
+
+.footerbottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 248, 239);
+  height: 100px;
+  padding:0 50px;
+}
+
+.footerbottom .right{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerbottom .right .circle{
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.footerbottom .right .circles{
+  display: flex;
+  gap: 10px;
+}
